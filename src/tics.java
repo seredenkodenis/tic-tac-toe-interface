@@ -208,7 +208,7 @@ class tics extends lines{
     private void checkWin(){
         // Проверить для 1 4 7, 2 5 8, 3 6 9
         if( (map[0][0] == 2 && map[0][1] == 2 && map[0][2] == 2) || (map[1][0] == 2 && map[1][1] == 2 && map[1][2] == 2) || ( map[2][0] == 2 && map[2][1] == 2 && map[2][2] == 2 )
-                || (map[0][0] == 2 && map[1][1] == 2 && map[2][2] == 2) || (map[0][2] == 2 && map[1][1] == 2 && map[2][0] == 2) ){
+                || (map[0][0] == 2 && map[1][1] == 2 && map[2][2] == 2) || (map[0][2] == 2 && map[1][1] == 2 && map[2][0] == 2) || (map[0][0] == 2 && map[1][0] == 2 && map[2][0] == 2) || (map[0][1] == 2 && map[1][1] == 2 && map[2][1] == 2) || (map[0][2] == 2 && map[1][2] == 2 && map[2][2] == 2)){
            lab4.setBounds(30,200,500,200);
             lab1.setText("");lab2.setText("");lab3.setText("");lab5.setText("");lab4.setText("");lab6.setText("");lab7.setText("");lab8.setText("");lab9.setText("");
             lab4.setText("X wins!");
@@ -216,7 +216,7 @@ class tics extends lines{
             lab4.setForeground(Color.RED);
         }
         if( (map[0][0] == 1 && map[0][1] == 1 && map[0][2] == 1) || (map[1][0] ==1 && map[1][1] == 1 && map[1][2] == 1) || ( map[2][0] == 1 && map[2][1] == 1 && map[2][2] == 1 )
-                || (map[0][0] == 1 && map[1][1] == 1 && map[2][2] == 1) || (map[0][2] == 1&& map[1][1] == 1 && map[2][0] == 1) ){
+                || (map[0][0] == 1 && map[1][1] == 1 && map[2][2] == 1) || (map[0][2] == 1&& map[1][1] == 1 && map[2][0] == 1) || (map[0][0] == 1 && map[1][0] == 1 && map[2][0] == 1) || (map[0][1] == 1 && map[1][1] == 1 && map[2][1] == 1) || (map[0][2] == 1 && map[1][2] == 1 && map[2][2] == 1)){
             System.out.println("O wins");
             System.out.println("GAME OVER");
             lab4.setBounds(30,200,500,200);
